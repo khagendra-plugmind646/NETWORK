@@ -1,4 +1,4 @@
-/* Resetting margins and padding for full-screen layout */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,25 +11,24 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-image: url('bg23.jpg'); /* Adjust path if necessary */
+  background-image: url('bg23.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
-  overflow: hidden; /* Prevent scrollbars */
+  overflow: hidden; 
 }
 
-/* Full-screen canvas setup */
 #networkCanvas {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; /* Ensure the canvas is behind the controls */
+  z-index: 1; 
 }
 
-/* Control panel aligned to the right side */
+
 .controls {
   position: absolute;
   top: 50%;
@@ -38,14 +37,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+  background-color: rgba(255, 255, 255, 0.8); 
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 2; /* Ensure controls are on top of the canvas */
+  z-index: 2; 
 }
 
-/* Styling input fields and buttons */
+
 .controls label {
   font-size: 14px;
 }
