@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5G Network Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="networkCanvas"></canvas>
+
+  <div class="controls">
+    <label for="numMen">Nodes:</label>
+    <input type="number" id="numMen" placeholder="Enter number of nodes" min="1">
+    
+    <label for="radius">Radius:</label>
+    <input type="number" id="radius" placeholder="Enter radius (px)" min="50">
+
+    <!-- Dropdown for selecting alpha -->
+    <label for="alphaSelect">Alpha:</label>
+    <select id="alphaSelect">
+      <option value="1">1</option>
+      <option value="0.1">0.1</option>
+      <option value="0.001">0.001</option>
+      <option value="0.0001">0.0001</option>
+    </select>
+
+    <!-- Dropdown for selecting beta -->
+    <label for="betaSelect">Beta:</label>
+    <select id="betaSelect">
+      <option value="1.6">1.6</option>
+      <option value="2">2</option>
+      <option value="2.2">2.2</option>
+      <option value="2.5">2.5</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    
+    <button id="deployBtn">Deploy Network</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
